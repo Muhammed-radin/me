@@ -105,6 +105,10 @@ q(".nav-btn").onclick = function() {
   }
 }
 
+function scrollDown(){
+  
+}
+
 // let sec2 = true;
 
 // function animate() {

@@ -27,10 +27,10 @@
       <ion-icon name="menu-outline"></ion-icon>
     </button>
     <div class="nav-menu">
-      <div class="nav-item">Home</div>
-      <div class="nav-item">About</div>
-      <div class="nav-item">Skills</div>
-      <div class="nav-item">Contact</div>
+      <div class="nav-item" onclick="window.location.href='#home'">Home</div>
+      <div class="nav-item" onclick="window.location.href='#about'">About</div>
+      <div class="nav-item" onclick="window.location.href='#skill'">Skills</div>
+      <div class="nav-item" onclick="window.location.href='#contact'">Contact</div>
     </div>
   </nav>
 
@@ -42,7 +42,7 @@
   </div>
 
   <div class="body">
-    <div class="section">
+    <div class="section" id="home">
       <div class="my-title">
         <span>Hello, Iam</span>
         <h1>Muhammed Radin</h1>
@@ -52,7 +52,7 @@
       </div>
     </div>
 
-    <div class="section">
+    <div class="section" id="about">
       <div class="white-0">
       </div>
       <div class="white-1"></div>
@@ -82,7 +82,7 @@
       </div>
     </div>
   </div>
-  <div class="section sec3">
+  <div class="section sec3" id="skill">
     <div class="modal">
       <div class="modal-head">
         <h3>My Skills</h3>
@@ -91,8 +91,9 @@
         <p><small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, quisquam. Porro excepturi quia pariatur necessitatibus quas rem voluptatem dignissimos, impedit labore laudantium libero ad temporibus odio est tenetur autem maxime!</small></p>
       </div>
     </div>
-
-    <div class="modal">
+    
+    <div class="cover-box-skill">
+    <div class="modal skill-box">
       <div class="modal-head">
         <h3>Progress</h3>
       </div>
@@ -139,6 +140,7 @@
             <div class="progress-value"></div>
           </div>
         </div>
+      </div>
       </div>
     </div>
   </div>

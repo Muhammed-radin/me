@@ -2,6 +2,11 @@ body {
   margin: 0;
   font-family: "Poppins", sans-serif;
   background: url("../20231111_223819.jpg");
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 nav {
@@ -11,8 +16,8 @@ nav {
   padding: 1rem;
   display: flex;
   flex-direction: row;
-  /* position: sticky;
-  position: -webkit-sticky; */
+  position: sticky;
+  position: -webkit-sticky;
   top: 0;
   left: 0;
   z-index: 9999;
@@ -58,7 +63,8 @@ nav {
 }
 
 .r-c-box {
-  display: flex;flex-direction:row;
+  display: flex;
+  flex-direction: row;
 }
 
 .my-title {
@@ -95,7 +101,8 @@ sp {
   border-radius: 50%;
 }
 
-*::-webkit-scrollbar {
+*::-webkit-scrollbar,
+::-webkit-scrollbar {
   display: none
 }
 
@@ -189,11 +196,14 @@ sp {
   background: #fff;
   border-radius: 9px;
   padding: 0.8rem;
-  margin: 1rem;
+  margin: 1.3rem;
+  margin-top: 1.5rem;
   max-width: 500px;
+  outline: 10px solid #ffffff70;
 }
 
-.modal h3, .modal p{
+.modal h3,
+.modal p {
   margin: 0.1rem;
 }
 
@@ -206,6 +216,9 @@ sp {
 }
 
 
+.skill-box {
+}
+
 .progress-box span {
   position: absolute;
   right: 13px;
@@ -217,8 +230,8 @@ sp {
   width: 97%;
   height: 4px;
   position: relative;
-margin-top: 10px;
-border-radius: 5px;
+  margin-top: 10px;
+  border-radius: 5px;
 }
 
 .progress-value {
@@ -228,25 +241,28 @@ border-radius: 5px;
   border-radius: 2px;
 }
 
+.cover-skill-box {
+}
+
 @media screen and (max-width: 600px) {
   .nav-item:hover {
     transform: scale(1.1) translate(3%) !important;
     transition: 0.2s;
   }
-  
-  .modal{
+
+  .modal {
     max-width: 100%;
   }
 
   .about-box {
     max-width: 100%;
     width: auto;
-  }   
-  
+  }
+
   .mbox {
     display: block;
   }
-  
+
   .cbox {
     display: none;
   }
@@ -254,7 +270,7 @@ border-radius: 5px;
   .about-body p {
     width: auto;
   }
-  
+
   .about-body2 {
     max-width: max-content
   }
@@ -262,7 +278,7 @@ border-radius: 5px;
   .about-box img {
     width: 90%;
   }
-  
+
   .r-c-box {
     flex-direction: column
   }
@@ -276,7 +292,7 @@ border-radius: 5px;
     min-height: 87vh;
     position: relative;
   }
-  
+
   .sec2-body {
     flex-direction: column;
   }
@@ -295,7 +311,7 @@ border-radius: 5px;
     background: #ffffff90;
     height: max-content;
     flex-direction: column;
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 4rem;
     width: 100%;
