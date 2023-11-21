@@ -42,18 +42,18 @@ q(".nav-btn").onclick = function() {
 
     qa('.nav-item').forEach(function(elem, index) {
       elem.style.display = 'block'
-      elem.style.transform = 'translate(120%)'
+      elem.style.opacity = 0
 
       elem.animate([{
-        transform: "translate(120%)"
+        opacity: 0
       }, {
-        transform: 'translate(0%)'
+        opacity: 1
       }], {
         duration: 250,
         delay: index * 150,
         iterations: 1
       }).onfinish = function() {
-        elem.style.transform = 'translate(0)'
+        elem.style.opacity = 1
       };
     })
 
@@ -85,19 +85,24 @@ q(".nav-btn").onclick = function() {
     });
 
     qa('.nav-item').forEach(function(elem, index) {
-      elem.style.transform = 'translate(0%)'
+      elem.style.opacity = 1
 
       elem.animate([{
-        transform: "translate(0%)"
+        opacity: 1
       }, {
-        transform: 'translate(120%)'
+        opacity: 0
       }], {
         duration: 300,
         delay: index * 150,
         iterations: 1
       }).onfinish = function() {
-        elem.style.transform = 'translate(120%)'
-        elem.style.display = 'none'
+        elem.style.opacity = 0
+        if (index == (qa('.nav-item').length - 1)) {
+          qa('.nav-item').forEach(function(el) {
+            el.style.display = 'none'
+            el.style.opacity = 1;
+          })
+        }
       };
     })
 
@@ -105,9 +110,6 @@ q(".nav-btn").onclick = function() {
   }
 }
 
-function scrollDown(){
-  
-}
 
 // let sec2 = true;
 
@@ -153,3 +155,30 @@ function scrollDown(){
 
 // document.body.onscroll = animate;
 // animate()
+
+
+/* swipe events */
+// var sections = ['home', 'about', 'skill', 'contact'];
+// var currentSection = 0
+
+// id('about').scrollIntoView({
+//   behavior: 'smooth',
+// })
+
+// function scrollDown() {
+//   currentSection += 1;
+//   currentSection = currentSection == 3 ? 0 : currentSection
+//   var now = sections[currentSection];
+//   // id(now).scrollIntoView({
+//   //   behavior: 'smooth',
+//   // })
+
+//   q('html').scrollTo({
+//     top: id(now).scrollWidth,
+//     behavior: 'smooth'
+//   })
+// }
+
+// initSwipeEvt(q('body'), {
+//   up: scrollDown,
+// })
