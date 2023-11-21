@@ -210,7 +210,6 @@ sp {
   padding: 0.8rem;
   margin: 1.3rem;
   margin-top: 1.5rem;
-  max-width: 500px;
   outline: 10px solid #ffffff70;
 }
 
@@ -253,6 +252,36 @@ sp {
   border-radius: 2px;
 }
 
+.sm-card-box {
+  display: flex;flex-direction: row;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+.sm-card p {
+  margin: 0;
+}
+
+.sm-card {
+  background: #fff;
+  padding: 0.8rem;
+  border-radius: 7px;
+  margin: 0.3rem;
+  text-align: center;
+  font-size: 8px;
+  min-width: 21%;
+}
+
+.sm-card-title {
+  font-size: 12px;
+  font-weight: 550;
+}
+
+.sm-card img {
+  width: 120px;
+  height: 120px;
+}
+
 .cover-skill-box {
 }
 
@@ -260,6 +289,10 @@ sp {
   .nav-item:hover {
     transform: scale(1.1) translate(3%) !important;
     transition: 0.2s;
+  }
+  
+  .sm-card {
+    min-width: 40%;
   }
 
   .modal {
