@@ -172,10 +172,18 @@ sp {
   padding-bottom: 2rem;
 }
 
-.about-body2 {
+.about-body-b {
   max-width: 60%;
   font-size: 13px;
   margin: 5px;
+}
+
+.about-body-b h3 {
+  font-size: 20px !important;
+}
+
+.about-body-b p {
+  font-size: 13px !important;
 }
 
 .mbox {
@@ -279,7 +287,8 @@ sp {
 
 .sm-card img {
   width: 120px;
-  height: 120px;
+  /* height: 120px; */
+  border-radius: 9px;
 }
 
 .cover-skill-box {
@@ -316,7 +325,7 @@ sp {
     width: auto;
   }
 
-  .about-body2 {
+  .about-body-b {
     max-width: max-content
   }
 
