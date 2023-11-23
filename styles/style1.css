@@ -294,6 +294,52 @@ sp {
 .cover-skill-box {
 }
 
+.repo-card-box {
+  display: flex;flex-direction: row;
+  overflow: scroll;
+}
+
+.repo-card {
+  background: #fff;
+  margin: 0.9rem;
+  padding: 0.9rem;
+  border-radius: 8px;
+  font-size: 14px;
+  min-width: 300px;
+  text-align: center;
+}
+
+.repo-title {
+  font-weight: bold;
+  text-align: start;
+}
+
+.repo-des {
+  font-size: 12px;
+  text-align: start;
+}
+
+.repo-img {
+  text-align: center;
+  width: 150px;
+  border-radius: 9px;
+}
+
+.tr-btn {
+  padding: 0.3rem 0.8rem;
+  margin: 0.5rem;
+  margin-top: 1rem;
+  text-decoration: none;
+  text-align: start;
+  position: relative;
+  padding-right: 3rem;
+}
+
+.tr-btn ion-icon {
+  font-size: 24px;
+  position: absolute; right: 10px;
+}
+
 @media screen and (max-width: 600px) {
   .nav-item:hover {
     transform: scale(1.1) translate(3%) !important;
