@@ -235,8 +235,7 @@ sp {
 }
 
 
-.skill-box {
-}
+.skill-box {}
 
 .progress-box span {
   position: absolute;
@@ -261,7 +260,8 @@ sp {
 }
 
 .sm-card-box {
-  display: flex;flex-direction: row;
+  display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   padding: 1rem;
 }
@@ -291,11 +291,11 @@ sp {
   border-radius: 9px;
 }
 
-.cover-skill-box {
-}
+.cover-skill-box {}
 
 .repo-card-box {
-  display: flex;flex-direction: row;
+  display: flex;
+  flex-direction: row;
   overflow: scroll;
 }
 
@@ -343,7 +343,8 @@ sp {
 
 .tr-btn ion-icon {
   font-size: 24px;
-  position: absolute; right: 10px;
+  position: absolute;
+  right: 10px;
 }
 
 .sec4 {
@@ -362,22 +363,43 @@ sp {
 .input-box {
   margin: 0.4rem;
   margin-top: 0.8rem;
+  max-width: 550px;
   font-size: 13px;
-  display: flex;flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
-input, textarea {
+input,
+textarea {
   padding: 0.5rem;
   color: #212121;
   font-weight: 500;
-  font-family: "Poppins",  sans-serif;
+  font-family: "Poppins", sans-serif;
   outline: none;
   border: 2px solid #999;
   border-radius: 8px;
   font-size: 14px;
 }
 
-input:hover, textarea:hover {
+input::placeholder,
+textarea::placeholder {
+  font-weight: normal
+}
+
+.input-box button {
+  padding: 0.4rem 1.7rem;
+  width: max-content;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  background: #4597CE;
+  color: #fff;
+  border-radius: 8px;
+  font-family: "Poppins", sans-serif;
+}
+
+input:hover,
+textarea:hover {
   border: 2px solid #5182BE;
 }
 
@@ -391,7 +413,7 @@ imp {
     transform: scale(1.1) translate(3%) !important;
     transition: 0.2s;
   }
-  
+
   .sm-card {
     min-width: 40%;
   }
