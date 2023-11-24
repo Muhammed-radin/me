@@ -351,6 +351,41 @@ sp {
   margin-top: 1rem;
 }
 
+.contact-form {
+  padding: 2rem;
+}
+
+.contact-form h3 {
+  margin: 0.5rem;
+}
+
+.input-box {
+  margin: 0.4rem;
+  margin-top: 0.8rem;
+  font-size: 13px;
+  display: flex;flex-direction: column;
+}
+
+input, textarea {
+  padding: 0.5rem;
+  color: #212121;
+  font-weight: 500;
+  font-family: "Poppins",  sans-serif;
+  outline: none;
+  border: 2px solid #999;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+input:hover, textarea:hover {
+  border: 2px solid #5182BE;
+}
+
+imp {
+  color: red;
+  margin: 4px;
+}
+
 @media screen and (max-width: 600px) {
   .nav-item:hover {
     transform: scale(1.1) translate(3%) !important;
