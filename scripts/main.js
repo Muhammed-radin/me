@@ -10,6 +10,7 @@ function id(id) {
   return document.getElementById(id + '')
 }
 
+
 var isNavMenuActive = 0
 
 q(".nav-btn").onclick = function() {
