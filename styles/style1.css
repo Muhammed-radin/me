@@ -183,7 +183,7 @@ sp {
 }
 
 .about-body-b p {
-  font-size: 13px !important;
+  font-size: 14px !important;
 }
 
 .mbox {
@@ -276,7 +276,7 @@ sp {
   border-radius: 7px;
   margin: 0.3rem;
   text-align: center;
-  font-size: 8px;
+  font-size: 9px;
   min-width: 21%;
 }
 
@@ -301,12 +301,18 @@ sp {
 
 .repo-card {
   background: #fff;
-  margin: 0.9rem;
+  margin: 0.5rem;
   padding: 0.9rem;
   border-radius: 8px;
   font-size: 14px;
   min-width: 300px;
   text-align: center;
+}
+
+.skill-repo-title {
+  margin: 0.5rem;
+  margin-left: 0.8rem;
+  color: #000;
 }
 
 .repo-title {
@@ -338,6 +344,11 @@ sp {
 .tr-btn ion-icon {
   font-size: 24px;
   position: absolute; right: 10px;
+}
+
+.sec4 {
+  background: #fff;
+  margin-top: 1rem;
 }
 
 @media screen and (max-width: 600px) {
