@@ -398,8 +398,8 @@ textarea::placeholder {
   font-family: "Poppins", sans-serif;
 }
 
-input:hover,
-textarea:hover {
+input:focus,
+textarea:focus {
   border: 2px solid #5182BE;
 }
 
