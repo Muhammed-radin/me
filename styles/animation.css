@@ -1,0 +1,11 @@
+nav {
+  animation: fadeInDown 2s 1;
+}
+
+.my-title .small-txt {
+  animation: slideInDown 1s 1 0.1s;
+}
+
+.footer-logos ion-icon {
+  animation: headShake 1s infinite;
+}

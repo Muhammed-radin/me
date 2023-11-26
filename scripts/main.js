@@ -10,6 +10,14 @@ function id(id) {
   return document.getElementById(id + '')
 }
 
+document.body.onload = function() {
+  q('.loader').style.animation = 'fadeOutDown 1.5s 1'
+  q('head').innerHTML += '<link rel="stylesheet" href="styles/animation.css">'
+  setTimeout(function() {
+    q('.loader').style.display = 'none'
+  }, 1000)
+}
+
 
 var isNavMenuActive = 0
 
