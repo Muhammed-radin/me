@@ -9,10 +9,7 @@
   <title>Muhammed Radin</title>
 
   <!-- HTML -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,7 +23,10 @@
 
 <body>
   <div class="loader">
-    <img src="load.svg" alt="" class="preloader">
+    <div class="preloader">
+      <img src="load.svg" alt="">
+      <p>Loading...</p>
+    </div>
   </div>
   <div id="blur"></div>
 
@@ -54,9 +54,9 @@
   <div class="body">
     <div class="section" id="home">
       <div class="my-title">
-        <span>Hello, Iam</span>
+        <p class="span">Hello, Iam</p>
         <h1>Muhammed Radin</h1>
-        <p>Web Designer /<sp> Developer</sp>
+        <p id="infoMe">Web Designer /<sp> Developer</sp>
         </p>
         <p class="small-txt">Scroll Down</p>
       </div>

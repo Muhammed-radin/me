@@ -2,6 +2,22 @@ nav {
   animation: fadeInDown 2s 1;
 }
 
+.title {
+  animation: slideInLeft 2s 1;
+}
+
+.my-title .span {
+  animation: slideInUp 0.8s 1;
+}
+
+.my-title h1 {
+  animation: slideInUp 1s 1 0.1s;
+}
+
+#infoMe {
+  animation: slideInUp 1s 1 0.2s;
+}
+
 .my-title .small-txt {
   animation: slideInDown 1s 1 0.1s;
 }

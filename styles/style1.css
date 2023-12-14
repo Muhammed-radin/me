@@ -22,6 +22,15 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
+  text-align: center;
+}
+
+.preloader p {
+  font-size: 15px;
+  margin-top: 0.9rem;
+}
+
+.loader img {
   width: 120px;
   height: 120px;
 }
@@ -518,7 +527,7 @@ imp {
 
   .section {
     width: 100%;
-    min-height: 87vh;
+    min-height: 86vh;
     position: relative;
   }
 
