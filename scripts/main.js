@@ -11,11 +11,11 @@ function id(id) {
 }
 
 document.body.onload = function() {
-  q('.loader').style.animation = 'fadeOutDown 1.5s 1'
+  q('.loader').style.animation = 'fadeOut 0.5s 1'
   q('head').innerHTML += '<link rel="stylesheet" href="styles/animation.css">'
   setTimeout(function() {
     q('.loader').style.display = 'none'
-  }, 1000)
+  }, 500)
 }
 
 
@@ -26,10 +26,10 @@ q(".nav-btn").onclick = function() {
   if (isNavMenuActive == 0) {
     q('.nav-btn').animate([{
       opacity: 1,
-      transform: 'scale(1)'
+      transform: 'translate(0)'
   }, {
       opacity: 0,
-      transform: 'scale(0)'
+      transform: 'translate(110%)'
   }], {
       duration: 300,
       iterations: 1,
@@ -83,10 +83,10 @@ q(".nav-btn").onclick = function() {
 
     q('.nav-btn').animate([{
       opacity: 0,
-      transform: 'scale(0)'
+      transform: 'translate(110%)'
   }, {
       opacity: 1,
-      transform: 'scale(1)'
+      transform: 'translate(0%)'
   }], {
       duration: 300,
       iterations: 1,
@@ -191,4 +191,3 @@ q(".nav-btn").onclick = function() {
 // initSwipeEvt(q('body'), {
 //   up: scrollDown,
 // })
-
