@@ -1,4 +1,4 @@
-body {
+body, html {
   margin: 0;
   font-family: "Poppins", sans-serif;
   background: url("../20231111_223819.jpg");
@@ -14,6 +14,13 @@ body {
   background: #DC3F6E;
   z-index: 99999999999999999;
   color: #fff;
+}
+
+video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
 }
 
 
@@ -123,6 +130,7 @@ nav {
   bottom: 70px;
   margin: 0.3rem;
   left: 50px;
+  color: #fff;
 }
 
 .my-title h1,
@@ -133,7 +141,7 @@ p {
 }
 
 sp {
-  color: #333
+  color: #eee
 }
 
 .side-menu {
@@ -351,7 +359,7 @@ sp {
 .skill-repo-title {
   margin: 0.5rem;
   margin-left: 0.8rem;
-  color: #000;
+  color: #fff;
 }
 
 .repo-title {
@@ -447,6 +455,9 @@ footer {
   color: #fff;
   padding: 2rem;
   margin-top: 0.5rem;
+  position: sticky;
+  position: webkit-sticky;
+  z-index: 999999;
 }
 
 .light-dark {
@@ -541,6 +552,8 @@ imp {
 
   .nav-item {
     display: none;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
     margin: 1rem;
     margin-left: 1.5rem;
   }

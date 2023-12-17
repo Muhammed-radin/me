@@ -54,11 +54,13 @@ q(".nav-btn").onclick = function() {
       elem.style.opacity = 0
 
       elem.animate([{
-        opacity: 0
+        opacity: 0,
+        transform: "translate(110%)"
       }, {
-        opacity: 1
+        opacity: 1,
+        transform: 'translate(0)'
       }], {
-        duration: 250,
+        duration: 300,
         delay: index * 150,
         iterations: 1
       }).onfinish = function() {
@@ -191,3 +193,16 @@ q(".nav-btn").onclick = function() {
 // initSwipeEvt(q('body'), {
 //   up: scrollDown,
 // })
+/*qa('.section *').forEach(function(elem, index) {
+  elem.roleId = elem.style.getPropertyValue('display')
+  elem.style.display = 'none'
+  elem.style.animation = 'fadeInUp 1s 1 0.' + (100 * (index + 1)) + 's'
+})
+
+document.body.onscroll = function() {
+  qa('.section *').forEach(function(elem) {
+    if (elem.scrollWidth <= (q('html').scrollTop)) {
+      elem.style.display = elem.roleId
+    }
+  })
+}*/
